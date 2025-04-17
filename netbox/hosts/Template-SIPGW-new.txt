@@ -1,0 +1,71 @@
+############################### HOST
+define host{
+        use                     generic-host
+        host_name               SiteNameST.a.SiteDNS-Rtr
+        alias                   Firewall
+        address                 
+        hostgroups              SiteNameST_GROUP, SIP, SiteDNS-T1
+}
+
+define host{
+        use                     generic-host
+        host_name               SiteNameST.b.SiteDNSFw_0
+        alias                   Firewall
+        address                 
+        hostgroups              SiteNameST_GROUP, SIP, SiteDNS-T1
+}
+
+define host{
+        use                     generic-host
+        host_name               SiteNameST.c.SiteDNSSw_0
+        alias                   Switch
+        address                 
+        hostgroups              SiteNameST_GROUP, SIP, SiteDNS-T1
+}
+
+define host{
+        use                     generic-host
+        host_name               SiteNameST.a.SiteDNSGwy_01-t1-0/1
+        alias                   SIP Gateway
+        address                 
+        hostgroups              SiteNameST_GROUP, SIP, SiteDNS-T1
+}
+
+define host{
+        use                     generic-host
+        host_name               SiteNameST.e.SiteDNSGwy_01-eth0/1
+        alias                   SIP Gateway
+        address                 
+        hostgroups              SiteNameST_GROUP, SIP, SiteDNS-T1
+}
+
+define host{
+        use                     generic-host
+        host_name               SiteNameST.e.SiteDNSGwy_01-eth0/2
+        alias                   SIP Gateway
+        address                 
+        hostgroups              SiteNameST_GROUP, SIP, SiteDNS-T1
+}
+
+define host{
+        use                     generic-host
+        host_name               SiteNameST.z.UPS
+        alias                   APC Unit
+        address                 
+        hostgroups              SiteNameST_GROUP, SIP, SiteDNS-T1
+}
+
+
+############################### HOST GROUP
+define hostgroup{
+        hostgroup_name  	SiteNameST_GROUP
+        alias           	Site Group
+}
+
+define hostgroup{
+	hostgroup_name		SiteDNS-T1
+	alias			Site DNS
+}
+
+
+

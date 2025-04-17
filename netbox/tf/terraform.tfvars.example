@@ -1,0 +1,2 @@
+librenms_url = "http://librenms.example.com"
+librenms_api_token = "your-api-token-here" 

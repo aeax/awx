@@ -1,0 +1,19 @@
+    CREATE DATABASE icingaweb2;
+    CREATE USER 'icingaweb2'@'localhost' IDENTIFIED BY 'apeman32';
+    GRANT ALL PRIVILEGES ON icingaweb2.* TO 'icingaweb2'@'localhost';
+
+        CREATE DATABASE director CHARACTER SET 'utf8';
+    CREATE USER director@localhost IDENTIFIED BY 'apeman32';
+    GRANT ALL ON director.* TO director@localhost;
+
+    mysql>
+    CREATE DATABASE icingadb;
+    CREATE USER 'icingadb'@'localhost' IDENTIFIED BY 'apeman32';
+    GRANT ALL ON icingadb.* TO 'icingadb'@'localhost';
+
+    The newly generated setup token is: ebecc81ad8dff49f
+
+    admin acconut - clg | apeman32
+
+    object ApiUser "root" {
+  password = "99c11d42a6266897

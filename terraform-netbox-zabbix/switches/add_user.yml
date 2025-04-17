@@ -1,0 +1,15 @@
+---
+- name: Add users to FortiSwitch
+  hosts: fortiswitches
+  gather_facts: no
+  connection: ssh
+
+  tasks:
+    - name: Create user w/ CLI
+      raw: |
+        config system admin
+        edit test
+        set password testing123
+        set accprofile super_admin
+        next
+        end

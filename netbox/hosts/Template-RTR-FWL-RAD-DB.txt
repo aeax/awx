@@ -1,0 +1,118 @@
+############################### HOSTS
+define host{
+        use                     generic-host    ; Name of host template to use
+        host_name               SiteName.a.Rtr
+        alias                   Router
+        address                 66.251.115.22
+}
+
+define host{
+        use                     generic-host    ; Name of host template to use
+        host_name               SiteName.b.Fwl
+        alias                   Firewall
+        address                 66.251.115.17
+}
+
+define host{
+        use                     generic-host    ; Name of host template to use
+        host_name               SiteName.c.ID01
+        alias                   Radical
+        address                 66.251.115.18
+}
+
+define host{
+        use                     generic-host    ; Name of host template to use
+        host_name               SiteName.c.IDDB
+        alias                   Database
+        address                 66.251.115.18
+}
+
+############################### HOST GROUP
+define hostgroup{
+        hostgroup_name  SiteName_GROUP
+        alias           SiteName
+	members SiteName.a.Rtr, SiteName.b.Fwl, SiteName.c.ID01, SiteName.c.IDDB
+}
+
+############################## HOST IMAGE
+ 	### ROUTER ###
+ define hostextinfo{
+       host_name       SiteName.a.Rtr
+       icon_image      router40.png
+       icon_image_alt  Router
+       vrml_image      router40.png
+       statusmap_image router40.gd2
+      2d_coords       40,40 
+      3d_coords       100.0,50.0,75.0
+ }
+
+	### FIREWALL ###
+define hostextinfo{
+      host_name       SiteName.b.Fwl
+      icon_image      Firewall.2.jpg 
+      icon_image_alt  Firewall
+      vrml_image      Firewall.2.jpg 
+      statusmap_image Firewall.2.jpg 
+     2d_coords        40,40 
+     3d_coords       100.0,50.0,75.0
+ }
+ 
+	### RADICAL ###
+define hostextinfo{
+      host_name       SiteName.c.ID01
+      icon_image      sco.gif
+      icon_image_alt  SCO Unix 
+      vrml_image      sco.png
+      statusmap_image sco.gd2
+     2d_coords       40,40 
+     3d_coords       100.0,50.0,75.0
+}
+
+	### DATABASE ###
+define hostextinfo{
+      host_name       SiteName.c.IDDB
+      icon_image      pgsql.gif
+      icon_image_alt  PostgreSQL
+      vrml_image      pgsql.gif
+      statusmap_image pgsql.gif
+     2d_coords       40,40    
+     3d_coords       100.0,50.0,75.0
+}
+
+############################## SERVICES
+	### PING ###
+define service {
+	use                             generic-service         ; Name of service template to use
+        host_name               SiteName.a.Rtr, SiteName.b.Fwl
+        service_description     PING  
+        check_command            check_ping!2000.0,90%!2000.0,98% 
+}
+
+
+	### HTTP ###
+define service{
+	use		generic-service		; Inherit default values from a template
+	host_name	 	SiteName.c.ID01
+	service_description     HTTP
+	check_command		check_http!-4
+}
+
+	### SSH ###
+define service{
+	use		generic-service		; Inherit default values from a template
+	host_name		SiteName.c.ID01
+	service_description	SSH
+	check_command		check_ssh
+}
+
+	### POSTGRESQL ###
+define service{
+	use		generic-service		; Inherit default values from a template
+	host_name		SiteName.c.IDDB
+	service_description	POSTGRESQL
+	check_command		check_postgresql
+}
+
+
+
+

@@ -1,0 +1,19 @@
+BexarTX:
+  network_prefix: "10.20.30.0/24"
+  firewall_ip: "10.20.30.1"
+  circuit_ip: "10.20.30.2"
+  gateway_ip: "10.20.30.254"
+  switch_ips:
+    - "10.20.30.10"
+    - "10.20.30.11"
+
+ILDOC_Centralia:
+  existing_site: true
+  existing_site_name: "ILDOC"
+  network_prefix: "10.30.40.0/24"
+  firewall_ip: "10.30.40.1"
+  circuit_ip: "10.30.40.2"
+  gateway_ip: "10.30.40.254"
+  switch_ips:
+    - "10.30.40.10"
+    - "10.30.40.11" 

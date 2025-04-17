@@ -1,0 +1,37 @@
+---
+- name: Create a new Zabbix host using API token authentication
+  hosts: zabbix_front
+  gather_facts: false
+  vars:
+    # Connection settings for Zabbix API
+    ansible_network_os: community.zabbix.zabbix
+    ansible_connection: httpapi
+    ansible_httpapi_port: 80
+    ansible_httpapi_use_ssl: false
+    ansible_httpapi_validate_certs: false
+    # Use your API token here:
+    ansible_zabbix_auth_key: "8ec0d52432c15c91fcafe9888500cf9a607f44091ab554dbee860f6b44fac895"
+  tasks:
+    - name: Create a new host in Zabbix
+      community.zabbix.zabbix_host:
+        host_name: TestHost
+        visible_name: TestHost
+        description: My test host desc.
+        host_groups:
+          - "Linux servers"
+        link_templates:
+          - "Linux minimal"
+          - "Linux filesystems by Zabbix agent"
+        status: enabled
+        state: present
+        interfaces:
+          - type: 1          # "agent" interface; you may also use "agent" or "1"
+            main: 1
+            useip: 1
+            ip: 127.0.0.1
+            dns: ""
+            port: 10050
+        proxy: zabbixproxy01
+        tags:
+          - tag: os
+            value: linux

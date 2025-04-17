@@ -1,0 +1,65 @@
+---
+# Alternative Ansible playbook for Adtran Netvanta 900e dial plan configuration
+# Using raw SSH commands for devices that might not support network_cli
+
+- name: Modify Adtran Netvanta 900e Dial Plan using SSH
+  hosts: adtran_devices
+  gather_facts: no
+  
+  vars:
+    ansible_connection: ssh
+  
+  tasks:
+    - name: Fetch current configuration
+      raw: show running-config
+      register: current_config
+      
+    - name: Set variables for configuration state
+      set_fact:
+        has_trunk_t92: "{{ 'voice trunk T92' in current_config.stdout }}"
+        has_trunk_t93: "{{ 'voice trunk T93' in current_config.stdout }}"
+        has_trunk_t94: "{{ 'voice trunk T94' in current_config.stdout }}"
+        has_main_trunk: "{{ 'voice grouped-trunk MAIN' in current_config.stdout }}"
+        has_sipext_trunk: "{{ 'voice grouped-trunk SIPEXT' in current_config.stdout }}"
+      
+    - name: Display information about existing configuration
+      debug:
+        msg: "Found existing configuration that will be replaced: {{ has_trunk_t92 and 'T92' or '' }} {{ has_trunk_t93 and 'T93' or '' }} {{ has_trunk_t94 and 'T94' or '' }} {{ has_main_trunk and 'MAIN' or '' }} {{ has_sipext_trunk and 'SIPEXT' or '' }}"
+      when: has_trunk_t92 or has_trunk_t93 or has_trunk_t94 or has_main_trunk or has_sipext_trunk
+  
+    - name: Enter config mode and remove existing configurations, then apply new config
+      raw: |
+        config t
+        {% if has_trunk_t92 %}no voice trunk T92{% endif %}
+        {% if has_trunk_t93 %}no voice trunk T93{% endif %}
+        {% if has_trunk_t94 %}no voice trunk T94{% endif %}
+        {% if has_main_trunk %}no voice grouped-trunk MAIN{% endif %}
+        {% if has_sipext_trunk %}no voice grouped-trunk SIPEXT{% endif %}
+        voice trunk T92 type sip
+        sip-server primary 50.168.232.64
+        sip-server secondary 50.168.232.65
+        sip-server secondary 50.168.232.66
+        sip-server secondary 50.168.232.67
+        sip-server secondary 50.168.232.68
+        sip-server secondary 50.168.232.69
+        sip-header-passthrough both
+        voice trunk T94 type sip
+        description "bgpproc"
+        sip-server primary 50.168.232.80
+        sip-server secondary 50.168.232.81
+        sip-server rollover service-unavailable-or-timeout
+        codec-list Global both
+        voice grouped-trunk MAIN
+        trunk T94
+        accept 28 cost 0
+        accept $ cost 0
+        voice grouped-trunk SIPEXT
+        trunk T94
+        accept 27 cost 0
+        end
+        write memory
+      register: output
+      
+    - name: Display configuration output
+      debug:
+        var: output.stdout_lines 

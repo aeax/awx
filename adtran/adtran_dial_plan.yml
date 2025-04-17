@@ -1,0 +1,59 @@
+---
+# Ansible playbook to modify dial plan configuration on Adtran Netvanta 900e devices via Telnet
+
+- name: Modify Adtran Netvanta 900e Dial Plan via Telnet (No Enable Password)
+  hosts: localhost
+  gather_facts: no
+
+  vars:
+    telnet_host: 192.168.1.10          # Replace with actual IP
+    telnet_user: bhood
+    telnet_pass: "#Crystal!12"          # Quoted to handle special characters
+
+  tasks:
+    - name: Push configuration via Telnet
+      expect:
+        command: "telnet {{ ansible_host }}"
+        responses:
+          "Username:": "{{ telnet_user }}"
+          "Password:": "{{ telnet_pass }}"
+          ">": |
+            configure terminal
+            no voice trunk T92
+            no voice trunk T93
+            no voice trunk T94
+            no voice grouped-trunk MAIN
+            no voice grouped-trunk SIPEXT
+            voice trunk T92 type sip
+              sip-server primary 50.168.232.64
+              sip-server secondary 50.168.232.65
+              sip-server secondary 50.168.232.66
+              sip-server secondary 50.168.232.67
+              sip-server secondary 50.168.232.68
+              sip-server secondary 50.168.232.69
+              sip-header-passthrough both
+            !
+            voice trunk T94 type sip
+              description "bgpproc"
+              sip-server primary 50.168.232.80
+              sip-server secondary 50.168.232.81
+              sip-server rollover service-unavailable-or-timeout
+              codec-list Global both
+            !
+            voice grouped-trunk MAIN
+              trunk T94
+              accept 28 cost 0
+              accept $ cost 0
+            !
+            voice grouped-trunk SIPEXT
+              trunk T94
+              accept 27 cost 0
+            !
+            write memory
+            exit
+            exit
+      register: telnet_output
+
+    - name: Show device output
+      debug:
+        var: telnet_output.stdout_lines

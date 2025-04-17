@@ -1,0 +1,78 @@
+{
+  "name": "BexarTX",
+  "sites": [
+    {
+      "name": "Unknown",
+      "devices": [
+        {
+          "id": "1",
+          "region": "BexarTX",
+          "siteName": "Unknown",
+          "ipAddress": "74.202.74.130",
+          "description": "BxrTxFwl1Old",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "2",
+          "region": "BexarTX",
+          "siteName": "Unknown",
+          "ipAddress": "4.28.169.222",
+          "description": "Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "SIP",
+      "devices": [
+        {
+          "id": "3",
+          "region": "BexarTX",
+          "siteName": "SIP",
+          "ipAddress": "4.28.169.222",
+          "description": "Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "WR",
+      "devices": [
+        {
+          "id": "4",
+          "region": "BexarTX",
+          "siteName": "WR",
+          "ipAddress": "100.91.1.184",
+          "description": "Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "eth0/1-WorkRelease",
+      "devices": [
+        {
+          "id": "5",
+          "region": "BexarTX",
+          "siteName": "eth0/1-WorkRelease",
+          "ipAddress": "100.91.1.159",
+          "description": "Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "devices": [
+        {
+          "id": "6",
+          "region": "BexarTX",
+          "siteName": "Video",
+          "ipAddress": "208.83.176.17",
+          "description": "Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    }
+  ]
+}

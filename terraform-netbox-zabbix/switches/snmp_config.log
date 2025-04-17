@@ -1,0 +1,47 @@
+ILDOCFW_18_SWN # ILDOCFW_18_SWN # 
+ILDOCFW_18_SWN (global) # 
+ILDOCFW_18_SWN (sysinfo) # 
+ILDOCFW_18_SWN (sysinfo) # 
+ILDOCFW_18_SWN (global) # ILDOCFW_18_SWN (global) # 
+ILDOCFW_18_SWN (user) # new entry 'snmp_ics1' added
+
+ILDOCFW_18_SWN (snmp_ics1) # 
+ILDOCFW_18_SWN (snmp_ics1) # 
+ILDOCFW_18_SWN (snmp_ics1) # 
+ILDOCFW_18_SWN (snmp_ics1) # 
+ILDOCFW_18_SWN (snmp_ics1) # 
+ILDOCFW_18_SWN (snmp_ics1) # 
+ILDOCFW_18_SWN (snmp_ics1) # 
+ILDOCFW_18_SWN (snmp_ics1) # 
+ILDOCFW_18_SWN (snmp_ics1) # 
+command parse error before 'sha1'
+Command fail. Return code -61
+
+ILDOCFW_18_SWN (snmp_ics1) # 
+ILDOCFW_18_SWN (snmp_ics1) # 
+ILDOCFW_18_SWN (snmp_ics1) # 
+ILDOCFW_18_SWN (snmp_ics1) # 
+ILDOCFW_18_SWN (user) # 
+ILDOCFW_18_SWN (global) # 
+ILDOCFW_18_SWN # ILDOCFW_18_SWN # 
+ILDOCFW_18_SWN # 
+ILDOCFW_18_SWN (global) # 
+ILDOCFW_18_SWN (user) # config system snmp user
+    edit "snmp_apx"
+        set notify-hosts 12.29.70.37 216.154.206.103
+        unset events
+        set security-level auth-priv
+        set auth-pwd ENC cGxfbJ18pkR3Td7ZXRz6jpQoAMWlyk6L4gLGelDT4CCfYl6ZOyGC7DzqzX5cKCicijMxhNq50yAuVVBlWmChDCXO9g+zVrtIOkIzsyVHn0fVA0WOrVYGIuKQN8PRZBc/qt5RqjB6xdMYzWnjtdU8XYUQHaCe1r9Z5t7XaTK6tdhlQ3F9MNqh9fabamrVb0l+PU027A==
+        set priv-pwd ENC cGxfbJ18pkR3Td7ZXRz6jpQoAMWlyk6L4gLGelDT4CCfYl6ZOyGC7DzqzX5cKCicijMxhNq50yAuVVBlWmChDCXO9g+zVrtIOkIzsyVHn0fVA0WOrVYGIuKQN8PRZBc/qt5RqjB6xdMYzWnjtdU8XYUQHaCe1r9Z5t7XaTK6tdhlQ3F9MNqh9fabamrVb0l+PU027A==
+    next
+    edit "snmp_ics1"
+        set notify-hosts 172.20.27.91
+        set security-level auth-priv
+        set auth-pwd ENC cGxfbJ18pkR3Td7ZXRz6jpQoAMWlyk6L4gLGelDT4CCfYl6ZOyGC7DzqzX5cKCicijMxhNq50yAuVVBlWmChDCXO9g+zVrtIOkIzsyVHn0fVA0WOrVYGIuKQN8PRZBc/qt5RqjB6xdMYzWnjtdU8XYUQHaCe1r9Z5t7XaTK6tdhlQ3F9MNqh9fabamrVb0l+PU027A==
+        set priv-pwd ENC cGxfbJ18pkR3Td7ZXRz6jpQoAMWlyk6L4gLGelDT4CCfYl6ZOyGC7DzqzX5cKCicijMxhNq50yAuVVBlWmChDCXO9g+zVrtIOkIzsyVHn0fVA0WOrVYGIuKQN8PRZBc/qt5RqjB6xdMYzWnjtdU8XYUQHaCe1r9Z5t7XaTK6tdhlQ3F9MNqh9fabamrVb0l+PU027A==
+    next
+end
+
+ILDOCFW_18_SWN (user) # 
+ILDOCFW_18_SWN (global) # 
+ILDOCFW_18_SWN # 

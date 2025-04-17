@@ -1,0 +1,33 @@
+---
+- name: Configure SNMPv3 on FortiGates
+  hosts: fortiswitches
+  gather_facts: no
+  connection: ssh
+  vars:
+    ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
+
+  tasks:
+    - name: Enable SNMP and configure SNMPv3 user
+      raw: |
+        config global
+        config system snmp sysinfo
+        set status enable
+        set description "FortiGate SNMP"
+        end
+        config system snmp user
+        edit "snmp_ics"
+        set status enable
+        set trap-status enable
+        set trap-lport 162
+        set trap-rport 162
+        set queries enable
+        set query-port 161
+        set notify-hosts 172.20.27.91
+        set security-level auth-priv
+        set auth-proto sha1
+        set auth-pwd "AtiJCEq7x2bC9nv"
+        set priv-proto aes
+        set priv-pwd "AtiJCEq7x2bC9nv"
+        next
+        end
+        end 

@@ -1,0 +1,755 @@
+{
+  "name": "ILDOC",
+  "sites": [
+    {
+      "name": "BigMuddyRiverCC",
+      "devices": [
+        {
+          "id": "1",
+          "region": "ILDOC",
+          "siteName": "BigMuddyRiverCC",
+          "ipAddress": "32.142.102.162",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "2",
+          "region": "ILDOC",
+          "siteName": "BigMuddyRiverCC",
+          "ipAddress": "192.183.117.202",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "3",
+          "region": "ILDOC",
+          "siteName": "BigMuddyRiverCC",
+          "ipAddress": "192.183.117.202",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "4",
+          "region": "ILDOC",
+          "siteName": "BigMuddyRiverCC",
+          "ipAddress": "12.77.55.114",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "CentraliaCC",
+      "devices": [
+        {
+          "id": "5",
+          "region": "ILDOC",
+          "siteName": "CentraliaCC",
+          "ipAddress": "12.77.55.114",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "6",
+          "region": "ILDOC",
+          "siteName": "CentraliaCC",
+          "ipAddress": "12.170.139.242",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "7",
+          "region": "ILDOC",
+          "siteName": "CentraliaCC",
+          "ipAddress": "12.170.139.242",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "8",
+          "region": "ILDOC",
+          "siteName": "CentraliaCC",
+          "ipAddress": "66.226.120.90",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "ClaytonWC",
+      "devices": [
+        {
+          "id": "9",
+          "region": "ILDOC",
+          "siteName": "ClaytonWC",
+          "ipAddress": "66.226.120.90",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "10",
+          "region": "ILDOC",
+          "siteName": "ClaytonWC",
+          "ipAddress": "12.170.139.98",
+          "description": "FortiGate Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "DecaturCC",
+      "devices": [
+        {
+          "id": "11",
+          "region": "ILDOC",
+          "siteName": "DecaturCC",
+          "ipAddress": "12.170.139.98",
+          "description": "FortiGate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "12",
+          "region": "ILDOC",
+          "siteName": "DecaturCC",
+          "ipAddress": "50.171.108.110",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "DixonCC",
+      "devices": [
+        {
+          "id": "13",
+          "region": "ILDOC",
+          "siteName": "DixonCC",
+          "ipAddress": "50.171.108.110",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "14",
+          "region": "ILDOC",
+          "siteName": "DixonCC",
+          "ipAddress": "50.171.108.114",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "15",
+          "region": "ILDOC",
+          "siteName": "DixonCC",
+          "ipAddress": "50.171.108.114",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "16",
+          "region": "ILDOC",
+          "siteName": "DixonCC",
+          "ipAddress": "12.55.64.190",
+          "description": "FortiGate Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "EastMolineCC",
+      "devices": [
+        {
+          "id": "17",
+          "region": "ILDOC",
+          "siteName": "EastMolineCC",
+          "ipAddress": "12.55.64.190",
+          "description": "FortiGate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "18",
+          "region": "ILDOC",
+          "siteName": "EastMolineCC",
+          "ipAddress": "12.177.12.186",
+          "description": "FortiGate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "19",
+          "region": "ILDOC",
+          "siteName": "EastMolineCC",
+          "ipAddress": "12.177.12.186",
+          "description": "FortiGate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "20",
+          "region": "ILDOC",
+          "siteName": "EastMolineCC",
+          "ipAddress": "208.124.116.206",
+          "description": "FortiGate Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "GrahamCC",
+      "devices": [
+        {
+          "id": "21",
+          "region": "ILDOC",
+          "siteName": "GrahamCC",
+          "ipAddress": "208.124.116.206",
+          "description": "FortiGate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "22",
+          "region": "ILDOC",
+          "siteName": "GrahamCC",
+          "ipAddress": "50.40.74.114",
+          "description": "FortiGate Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "JacksonvilleCC",
+      "devices": [
+        {
+          "id": "23",
+          "region": "ILDOC",
+          "siteName": "JacksonvilleCC",
+          "ipAddress": "50.40.74.114",
+          "description": "FortiGate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "24",
+          "region": "ILDOC",
+          "siteName": "JacksonvilleCC",
+          "ipAddress": "32.140.98.14",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "IllinoisRiverCC",
+      "devices": [
+        {
+          "id": "25",
+          "region": "ILDOC",
+          "siteName": "IllinoisRiverCC",
+          "ipAddress": "32.140.98.14",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "26",
+          "region": "ILDOC",
+          "siteName": "IllinoisRiverCC",
+          "ipAddress": "12.179.55.66",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "27",
+          "region": "ILDOC",
+          "siteName": "IllinoisRiverCC",
+          "ipAddress": "12.179.55.66",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "28",
+          "region": "ILDOC",
+          "siteName": "IllinoisRiverCC",
+          "ipAddress": "192.183.119.126",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "KewaneeLSRC",
+      "devices": [
+        {
+          "id": "29",
+          "region": "ILDOC",
+          "siteName": "KewaneeLSRC",
+          "ipAddress": "192.183.119.126",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "30",
+          "region": "ILDOC",
+          "siteName": "KewaneeLSRC",
+          "ipAddress": "50.122.23.162",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "31",
+          "region": "ILDOC",
+          "siteName": "KewaneeLSRC",
+          "ipAddress": "50.122.23.162",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "JolietITC-JTC",
+      "devices": [
+        {
+          "id": "32",
+          "region": "ILDOC",
+          "siteName": "JolietITC-JTC",
+          "ipAddress": "12.77.53.174",
+          "description": "FortiGate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "33",
+          "region": "ILDOC",
+          "siteName": "JolietITC-JTC",
+          "ipAddress": "12.189.76.130",
+          "description": "FortiGate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "34",
+          "region": "ILDOC",
+          "siteName": "JolietITC-JTC",
+          "ipAddress": "12.189.76.130",
+          "description": "FortiGate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "35",
+          "region": "ILDOC",
+          "siteName": "JolietITC-JTC",
+          "ipAddress": "74.37.251.214",
+          "description": "FortiGate Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "LawrenceCC",
+      "devices": [
+        {
+          "id": "36",
+          "region": "ILDOC",
+          "siteName": "LawrenceCC",
+          "ipAddress": "74.37.251.214",
+          "description": "FortiGate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "37",
+          "region": "ILDOC",
+          "siteName": "LawrenceCC",
+          "ipAddress": "50.122.23.171",
+          "description": "FortiGate Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "LincolnCC",
+      "devices": [
+        {
+          "id": "38",
+          "region": "ILDOC",
+          "siteName": "LincolnCC",
+          "ipAddress": "50.122.23.171",
+          "description": "FortiGate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "39",
+          "region": "ILDOC",
+          "siteName": "LincolnCC",
+          "ipAddress": "50.122.23.170",
+          "description": "FortiGate Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "LoganCC",
+      "devices": [
+        {
+          "id": "40",
+          "region": "ILDOC",
+          "siteName": "LoganCC",
+          "ipAddress": "50.122.23.170",
+          "description": "FortiGate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "41",
+          "region": "ILDOC",
+          "siteName": "LoganCC",
+          "ipAddress": "23.91.221.178",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "MenardCC",
+      "devices": [
+        {
+          "id": "42",
+          "region": "ILDOC",
+          "siteName": "MenardCC",
+          "ipAddress": "23.91.221.178",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "43",
+          "region": "ILDOC",
+          "siteName": "MenardCC",
+          "ipAddress": "23.91.221.170",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "MenardMSU",
+      "devices": [
+        {
+          "id": "44",
+          "region": "ILDOC",
+          "siteName": "MenardMSU",
+          "ipAddress": "23.91.221.170",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "45",
+          "region": "ILDOC",
+          "siteName": "MenardMSU",
+          "ipAddress": "157.185.75.82",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "MurphysboroLSRC",
+      "devices": [
+        {
+          "id": "46",
+          "region": "ILDOC",
+          "siteName": "MurphysboroLSRC",
+          "ipAddress": "157.185.75.82",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "NorthernRCC",
+      "devices": [
+        {
+          "id": "47",
+          "region": "ILDOC",
+          "siteName": "NorthernRCC",
+          "ipAddress": "12.76.119.174",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "48",
+          "region": "ILDOC",
+          "siteName": "NorthernRCC",
+          "ipAddress": "12.203.73.50",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "49",
+          "region": "ILDOC",
+          "siteName": "NorthernRCC",
+          "ipAddress": "12.203.73.50",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "50",
+          "region": "ILDOC",
+          "siteName": "NorthernRCC",
+          "ipAddress": "50.40.128.98",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "PinckneyvilleCC",
+      "devices": [
+        {
+          "id": "51",
+          "region": "ILDOC",
+          "siteName": "PinckneyvilleCC",
+          "ipAddress": "50.40.128.98",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "52",
+          "region": "ILDOC",
+          "siteName": "PinckneyvilleCC",
+          "ipAddress": "24.52.151.82",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "PittsfieldWC",
+      "devices": [
+        {
+          "id": "53",
+          "region": "ILDOC",
+          "siteName": "PittsfieldWC",
+          "ipAddress": "24.52.151.82",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "54",
+          "region": "ILDOC",
+          "siteName": "PittsfieldWC",
+          "ipAddress": "192.183.108.98",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "PontiacCC",
+      "devices": [
+        {
+          "id": "55",
+          "region": "ILDOC",
+          "siteName": "PontiacCC",
+          "ipAddress": "192.183.108.98",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "56",
+          "region": "ILDOC",
+          "siteName": "PontiacCC",
+          "ipAddress": "50.122.23.130",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "57",
+          "region": "ILDOC",
+          "siteName": "PontiacCC",
+          "ipAddress": "50.122.23.130",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "58",
+          "region": "ILDOC",
+          "siteName": "PontiacCC",
+          "ipAddress": "66.99.128.194",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "RobinsonCC",
+      "devices": [
+        {
+          "id": "59",
+          "region": "ILDOC",
+          "siteName": "RobinsonCC",
+          "ipAddress": "66.99.128.194",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "60",
+          "region": "ILDOC",
+          "siteName": "RobinsonCC",
+          "ipAddress": "50.122.23.154",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "ShawneeCC",
+      "devices": [
+        {
+          "id": "61",
+          "region": "ILDOC",
+          "siteName": "ShawneeCC",
+          "ipAddress": "50.122.23.154",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "62",
+          "region": "ILDOC",
+          "siteName": "ShawneeCC",
+          "ipAddress": "192.183.119.6",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "SheridanCC",
+      "devices": [
+        {
+          "id": "63",
+          "region": "ILDOC",
+          "siteName": "SheridanCC",
+          "ipAddress": "192.183.119.6",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "64",
+          "region": "ILDOC",
+          "siteName": "SheridanCC",
+          "ipAddress": "50.122.23.202",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "65",
+          "region": "ILDOC",
+          "siteName": "SheridanCC",
+          "ipAddress": "50.122.23.202",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "66",
+          "region": "ILDOC",
+          "siteName": "SheridanCC",
+          "ipAddress": "32.142.102.162",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "Statesville",
+      "devices": [
+        {
+          "id": "67",
+          "region": "ILDOC",
+          "siteName": "Statesville",
+          "ipAddress": "32.142.102.162",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "68",
+          "region": "ILDOC",
+          "siteName": "Statesville",
+          "ipAddress": "208.124.116.202",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "TaylorvilleCC",
+      "devices": [
+        {
+          "id": "69",
+          "region": "ILDOC",
+          "siteName": "TaylorvilleCC",
+          "ipAddress": "208.124.116.202",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "Taylorville",
+      "devices": [
+        {
+          "id": "70",
+          "region": "ILDOC",
+          "siteName": "Taylorville",
+          "ipAddress": "12.77.162.138",
+          "description": "FortiGate Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "VandaliaCC",
+      "devices": [
+        {
+          "id": "71",
+          "region": "ILDOC",
+          "siteName": "VandaliaCC",
+          "ipAddress": "12.77.162.138",
+          "description": "FortiGate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "72",
+          "region": "ILDOC",
+          "siteName": "VandaliaCC",
+          "ipAddress": "74.37.251.218",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "ViennaCC",
+      "devices": [
+        {
+          "id": "73",
+          "region": "ILDOC",
+          "siteName": "ViennaCC",
+          "ipAddress": "74.37.251.218",
+          "description": "Fortigate Firewall",
+          "deviceType": "Firewall"
+        },
+        {
+          "id": "74",
+          "region": "ILDOC",
+          "siteName": "ViennaCC",
+          "ipAddress": "24.52.160.2",
+          "description": "FortiGate Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    },
+    {
+      "name": "WesternIllinoisCC",
+      "devices": [
+        {
+          "id": "75",
+          "region": "ILDOC",
+          "siteName": "WesternIllinoisCC",
+          "ipAddress": "24.52.160.2",
+          "description": "FortiGate Firewall",
+          "deviceType": "Firewall"
+        }
+      ]
+    }
+  ]
+}

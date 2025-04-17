@@ -1,0 +1,18 @@
+# LibreNMS Site Definitions - Comprehensive format
+# ----------------------------------------------
+
+# Simple test configuration - now with all required fields
+TestSite4:
+  network_prefix: "192.168.1.0/24"  # Common local network
+  firewall_ip: "192.168.1.1"        # Common gateway IP
+  circuit_ip: "192.168.1.2"
+  gateway_prefix: "TestSite3-GW"
+  gateway_ips:
+    - "192.168.1.254"
+  switch_prefix: "TestSite3-SW"
+  switch_ips:
+    - "192.168.1.10"
+  # Add any other fields from templates.yaml that might be required
+  # For example:
+  # existing_site: false
+  # force_add: true

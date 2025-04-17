@@ -1,0 +1,6 @@
+forti_admin: "bhood"
+forti_password: "#Crystal!12" 
+
+new_user: "test"
+new_user_password: "testing123"
+user_role: "super_admin"
